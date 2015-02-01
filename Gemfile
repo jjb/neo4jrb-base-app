@@ -7,7 +7,9 @@ gem 'rails', '4.2.0'
 gem 'neo4j', '~> 4.1.2'
 gem 'oj'
 gem 'oj_mimic_json'
-gem 'devise-neo4j', '~> 2.0.0'
+gem 'devise-neo4j'
+# Temporary fix for Rails 4.2 + Devise 3.3.0 incompatibility
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
